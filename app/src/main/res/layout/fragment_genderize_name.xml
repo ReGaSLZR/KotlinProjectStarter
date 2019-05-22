@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/margin_padding_medium"
+                android:background="@color/white">
+
+    <Button
+            android:id="@+id/button_findGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/margin_padding_xmedium"
+            android:text="Go"/>
+
+    <EditText
+            android:id="@+id/editText_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignBaseline="@+id/button_findGender"
+            android:layout_toLeftOf="@+id/button_findGender"
+            android:layout_toStartOf="@+id/button_findGender"
+            android:background="@drawable/drawable_sel_edittext"
+            android:hint="Enter name here..."
+            android:textColor="@color/black"
+            android:textColorHint="@color/textSecondary"
+            android:textSize="@dimen/text_large"/>
+
+    <View
+            android:id="@+id/divider"
+            android:layout_below="@+id/button_findGender"
+            style="@style/view_divider"/>
+
+    <TextView
+            android:id="@+id/header_result"
+            android:layout_below="@+id/divider"
+            android:text="Results"
+            android:textSize="@dimen/text_large"
+            style="@style/text_header"/>
+
+    <TextView
+            android:id="@+id/label_nameEntry"
+            android:layout_below="@+id/header_result"
+            android:layout_marginTop="@dimen/margin_padding_medium"
+            android:text="@string/label_name_entry"
+            style="@style/text_label"/>
+
+    <TextView
+            android:id="@+id/value_nameEntry"
+            android:layout_alignBaseline="@+id/label_nameEntry"
+            android:layout_toEndOf="@+id/label_nameEntry"
+            android:layout_toRightOf="@+id/label_nameEntry"
+            tools:text="Test"
+            style="@style/text_value"/>
+
+    <TextView
+            android:id="@+id/label_nameGender"
+            android:layout_below="@+id/label_nameEntry"
+            android:layout_marginTop="@dimen/margin_padding_large"
+            android:text="@string/label_name_gender"
+            style="@style/text_label"/>
+
+    <TextView
+            android:id="@+id/value_nameGender"
+            android:layout_alignBaseline="@+id/label_nameGender"
+            android:layout_toEndOf="@+id/label_nameGender"
+            android:layout_toRightOf="@+id/label_nameGender"
+            android:textSize="@dimen/text_xlarge"
+            tools:text="Test"
+            style="@style/text_value"/>
+
+    <TextView
+            android:id="@+id/label_nameProbability"
+            android:layout_below="@+id/label_nameGender"
+            android:text="@string/label_name_probability"
+            style="@style/text_label"/>
+
+    <TextView
+            android:id="@+id/value_nameProbability"
+            android:layout_alignBaseline="@+id/label_nameProbability"
+            android:layout_toEndOf="@+id/label_nameProbability"
+            android:layout_toRightOf="@+id/label_nameProbability"
+            tools:text="Test"
+            style="@style/text_value"/>
+
+    <ImageView
+            android:id="@+id/imageView_gender"
+            android:src="@drawable/drawable_av_unknown"
+            style="@style/image_feedback"/>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<resources>
+
+    <string name="app_name">Kotlin Project Starter</string>
+    <string name="app_subtitle">by ReGaSLZR</string>
+
+    <!-- Spiel Messages -->
+    <string name="spiel_drawer_open">Open left navigation drawer</string>
+    <string name="spiel_drawer_close">Close left navigation drawer</string>
+    <string name="spiel_loading_title">Loading</string>
+    <string name="spiel_loading_message">Please wait&#8230;</string>
+    <string name="spiel_could_not_load">Could not load item(s).</string>
+    <string name="spiel_no_items_available">Sorry, there are no items available for display.</string>
+    <string name="spiel_error_generic">Something went wrong.</string>
+
+    <!-- Action Strings / Button texts -->
+    <string name="action_okay">Okay</string>
+
+    <!--Label texts-->
+    <string name="label_joke_id">ID: </string>
+    <string name="label_joke_type">Type: </string>
+    <string name="label_joke_setup">Setup: </string>
+    <string name="label_joke_punchline">Punchline: </string>
+    <string name="label_name_entry">Name: </string>
+    <string name="label_name_gender">Gender: </string>
+    <string name="label_name_probability">Probability: </string>
+
+     <!--Toolbar Titles -->
+    <string name="toolbar_title_About">About</string>
+    <string name="toolbar_title_random_joke">Random Joke</string>
+    <string name="toolbar_title_genderize_name">Genderize Name</string>
+
+</resources>

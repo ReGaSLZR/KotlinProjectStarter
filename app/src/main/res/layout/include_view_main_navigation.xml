@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/margin_padding_medium"
+        android:paddingRight="@dimen/margin_padding_medium"
+        android:paddingTop="@dimen/margin_padding_midlarge"
+        android:background="@color/white">
+
+    <ImageView
+            android:id="@+id/main_drawer_header_logo"
+            android:layout_width="@dimen/drawer_header_logo_size"
+            android:layout_height="@dimen/drawer_header_logo_size"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/margin_padding_medium"
+            android:layout_marginLeft="@dimen/margin_padding_smedium"
+            android:layout_marginStart="@dimen/margin_padding_smedium"
+            android:layout_marginTop="@dimen/margin_padding_medium"
+            android:background="@drawable/ic_launcher_background"
+            android:src="@drawable/ic_launcher_foreground" />
+
+    <TextView
+            android:id="@+id/main_drawer_header_title"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/margin_padding_none"
+            android:layout_marginLeft="@dimen/margin_padding_xmedium"
+            android:layout_marginStart="@dimen/margin_padding_xmedium"
+            android:layout_toEndOf="@+id/main_drawer_header_logo"
+            android:layout_toRightOf="@+id/main_drawer_header_logo"
+            android:background="@drawable/drawable_menu_item_background_white"
+            android:text="@string/app_name"
+            style="@style/text_header"/>
+
+    <TextView
+            android:layout_below="@+id/main_drawer_header_title"
+            android:layout_marginBottom="@dimen/margin_padding_none"
+            android:layout_marginLeft="@dimen/margin_padding_xmedium"
+            android:layout_marginStart="@dimen/margin_padding_xmedium"
+            android:layout_marginTop="@dimen/margin_padding_none"
+            android:layout_toEndOf="@+id/main_drawer_header_logo"
+            android:layout_toRightOf="@+id/main_drawer_header_logo"
+            android:text="@string/app_subtitle"
+            style="@style/text_label"/>
+
+    <View
+            android:id="@+id/navigation_header_divider"
+            android:layout_below="@+id/main_drawer_header_logo"
+            style="@style/view_divider"/>
+
+    <!--Menu icons and their respective titles-->
+
+    <ImageView
+            android:id="@+id/main_drawer_menu_icon_genderize_name"
+            android:layout_below="@+id/navigation_header_divider"
+            android:src="@drawable/drawable_av_unknown"
+            style="@style/image_drawer_menu_item"/>
+
+    <TextView
+            android:id="@+id/main_drawer_menu_text_genderize_name"
+            android:layout_alignBaseline="@+id/main_drawer_menu_icon_genderize_name"
+            android:layout_below="@+id/navigation_header_divider"
+            android:layout_toEndOf="@+id/main_drawer_menu_icon_genderize_name"
+            android:layout_toRightOf="@+id/main_drawer_menu_icon_genderize_name"
+            android:text="@string/toolbar_title_genderize_name"
+            style="@style/text_drawer_menu_item"/>
+
+    <ImageView
+            android:id="@+id/main_drawer_menu_icon_random_joke"
+            android:layout_below="@+id/main_drawer_menu_text_genderize_name"
+            android:src="@drawable/drawable_emoji_happy"
+            style="@style/image_drawer_menu_item"/>
+
+    <TextView
+            android:id="@+id/main_drawer_menu_text_random_joke"
+            android:layout_alignBaseline="@+id/main_drawer_menu_icon_genderize_name"
+            android:layout_below="@+id/main_drawer_menu_text_genderize_name"
+            android:layout_toEndOf="@+id/main_drawer_menu_icon_random_joke"
+            android:layout_toRightOf="@+id/main_drawer_menu_icon_random_joke"
+            android:text="@string/toolbar_title_random_joke"
+            style="@style/text_drawer_menu_item"/>
+
+</RelativeLayout>

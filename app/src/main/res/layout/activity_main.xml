@@ -1,0 +1,42 @@
+<android.support.v4.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/activity_main_drawerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <com.regaslzr.kprojstarter.common.toolbar.ProjectToolbar
+                android:id="@+id/activity_main_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:toolbarIcon="@drawable/drawable_emoji_happy"
+                app:toolbarTitle="@string/toolbar_title_random_joke" />
+
+        <FrameLayout
+                android:id="@+id/activity_main_screen_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/activity_main_toolbar" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+            android:id="@+id/activity_main_navigationview"
+            android:layout_width="@dimen/drawer_header_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/white">
+
+        <include
+                layout="@layout/include_view_main_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

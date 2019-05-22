@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_padding_midlarge"
+        android:layout_marginRight="@dimen/margin_padding_midlarge"
+        android:background="@drawable/drawable_rounded_square_white"
+        android:paddingBottom="@dimen/margin_padding_midlarge"
+        android:paddingLeft="@dimen/margin_padding_medium"
+        android:paddingRight="@dimen/margin_padding_medium"
+        android:paddingTop="@dimen/margin_padding_medium">
+
+    <TextView
+            android:id="@+id/messageDialog_textView_message"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_padding_xmidlarge"
+            android:padding="@dimen/margin_padding_xxxsmall"
+            android:textSize="@dimen/text_medium"
+            tools:text="This is a test message"
+            style="@style/text_default" />
+
+    <Button
+            android:id="@+id/messageDialog_button_action"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_padding_large"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/messageDialog_textView_message"
+            android:layout_marginTop="@dimen/margin_padding_midlarge"
+            android:paddingLeft="@dimen/margin_padding_xsmall"
+            android:paddingRight="@dimen/margin_padding_xsmall"
+            tools:text="@string/action_okay"
+            style="@style/text_button" />
+
+</RelativeLayout>

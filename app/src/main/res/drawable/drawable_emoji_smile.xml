@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Taken from:
+    https://www.iconfinder.com/icons/4096574/lucky_smile_smiley_icon
+-->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="128dp"
+        android:height="128dp"
+        android:viewportWidth="128"
+        android:viewportHeight="128">
+
+    <path
+            android:fillColor="#FFAB52"
+            android:pathData="M64,127C29.2,127,1,98.8,1,64S29.2,1,64,1s63,28.2,63,63l-23,44L64,127z" />
+    <path
+            android:fillColor="#B97E1C"
+            android:pathData="M117,64c0,29.2-23.8,53-53,53v10c34.8,0,63-28.2,63-63H117z" />
+    <path
+            android:fillColor="#D63131"
+            android:pathData="M37.6,94C29.2,86.7,24,76,24,64h10l30,3l30-3h10c0,12-5.2,22.7-13.5,30" />
+    <path
+            android:fillColor="#973317"
+            android:pathData="M90.4,94C83.4,87.8,74.1,84,64,84s-19.4,3.8-26.4,10L64,97L90.4,94z" />
+    <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M 34 64 H 94 V 74 H 34 V 64 Z" />
+    <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M 24 44 H 54 V 54 H 24 V 44 Z" />
+    <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M90.4,94H37.6c7.1,6.2,16.3,10,26.4,10S83.4,100.2,90.4,94z" />
+    <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M 84 34 C 89.5228474983 34 94 38.4771525017 94 44 C 94 49.5228474983 89.5228474983 54 84 54 C 78.4771525017 54 74 49.5228474983 74 44 C 74 38.4771525017 78.4771525017 34 84 34 Z" />
+</vector>

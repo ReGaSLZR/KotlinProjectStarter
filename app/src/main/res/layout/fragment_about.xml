@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_padding_xxlarge"
+        android:paddingLeft="@dimen/margin_padding_medium"
+        android:paddingRight="@dimen/margin_padding_medium"
+        android:paddingTop="@dimen/margin_padding_medium">
+
+        <TextView
+            android:text="@string/app_name"
+            android:layout_marginBottom="0dp"
+            style="@style/text_header"/>
+
+        <TextView
+            android:text="A kit that I made for developers who want to make an app quickly."
+            style="@style/text_label"/>
+
+
+        <!--SPECIFICS-->
+
+        <TextView
+            android:layout_marginTop="@dimen/margin_padding_small"
+            android:text="Specifics:"
+            style="@style/text_highlight"/>
+
+        <TextView
+            android:text="- Coded in full-Kotlin (While Java, as a language, is like home in Android development, you can't deny that Kotlin, as an alternative, is like magic.)"
+            style="@style/text_label"/>
+
+        <TextView
+            android:text="- Uses Koin for dependency injection (Dagger2 is good and all but it presents the creation and use of a lot of boilerplate classes and interfaces. Also, Dagger2 slows build time. With Koin, your DI is ready in a second with no boilerplate code and build overhead)"
+            style="@style/text_label"/>
+
+        <TextView
+            android:text="Uses MVVM pattern and has base classes for Views and ViewModels"
+            style="@style/text_label"/>
+
+        <TextView
+            android:text="Has ready-to-configure Failure subclasses for your specific failure scenarios"
+            style="@style/text_label"/>
+
+        <TextView
+            android:text="Has easy, ready-to-configure Retrofit client for your networking needs"
+            style="@style/text_label"/>
+
+        <TextView
+            android:text="Implements reactive programming"
+            style="@style/text_label"/>
+
+
+        <!--ARCHITECTURE-->
+
+        <TextView
+            android:layout_marginTop="@dimen/margin_padding_small"
+            android:text="Architecture:"
+            style="@style/text_highlight"/>
+
+        <TextView
+            android:text="- One Activity to rule all View-ViewModel pairs"
+            style="@style/text_label"/>
+
+        <TextView
+            android:text="- MVVM in favor of Fragments"
+            style="@style/text_label"/>
+
+
+        <!--COMING SOON-->
+
+        <TextView
+            android:layout_marginTop="@dimen/margin_padding_small"
+            android:text="Coming Soon:"
+            style="@style/text_highlight"/>
+
+        <TextView
+            android:text="- Caching (soft and local)"
+            style="@style/text_label"/>
+
+        <TextView
+            android:text="- Migrate to AndroidX"
+            style="@style/text_label"/>
+
+    </LinearLayout>
+
+</ScrollView>
